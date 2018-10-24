@@ -16,3 +16,47 @@ Click the Add Jar/Folder button.
 Navigate to the directory where the downloaded JAR files are, select the Jar and click OK
 
 # Java-CODE
+package sql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ *
+ * @author Administrator
+ */
+public class SQL {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        try {
+            
+ Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+ String url="jdbc:sqlserver://localhost:1433;databaseName=MYDATABASE;integratedSecurity=true";
+ Connection con = DriverManager.getConnection(url);            
+ Statement stmt = con.createStatement();
+ String sql = "SELECT * FROM MYDATABASE.dbo.mms_table";
+ResultSet rs = stmt.executeQuery(sql);
+while (rs.next()) {
+     System.out.println("Hello");           
+    System.out.println(rs.getString("FirstName") + " " + rs.getString("LastName"));
+            }
+            
+            
+            
+
+    }
+        
+        catch(Exception e)
+        {
+            
+        }
+    }
+}
