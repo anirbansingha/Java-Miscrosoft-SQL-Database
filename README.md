@@ -15,7 +15,7 @@ Select Libraries.
 Click the Add Jar/Folder button.
 Navigate to the directory where the downloaded JAR files are, select the Jar and click OK
 
-# Java-CODE
+# Java-CODE.
 package sql;
 
 import java.sql.Connection;
@@ -68,6 +68,8 @@ while (rs.next()) {
     }
 }
 
-# Authentication-Error
+# Authentication-Error.
+ Copy the auth dll from the Microsoft JDBC Driver in your project folder.
+# Port used by SQL server.
+ SQL Server Configuration Manager and check TCP port
 
-# Port used by SQL server
