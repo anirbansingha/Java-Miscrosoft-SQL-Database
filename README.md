@@ -39,8 +39,8 @@ public class SQL {
             
  Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
  
- String url="jdbc:sqlserver://localhost:1433;databaseName=MYDATABASE;integratedSecurity=true";
- 
+ String url="jdbc:sqlserver://localhost:1433;databaseName=MYDATABASE;integratedSecurity=true"; // Window Authentication
+  
  Connection con = DriverManager.getConnection(url); 
  
  Statement stmt = con.createStatement();
@@ -71,5 +71,5 @@ while (rs.next()) {
 # Authentication-Error.
  Copy the auth dll from the Microsoft JDBC Driver in your project folder.
 # Port used by SQL server.
- SQL Server Configuration Manager and check TCP port
+In SQL Server Configuration Manager and check TCP port
 
