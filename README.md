@@ -28,16 +28,11 @@ import java.sql.SQLException;
 
 import java.sql.Statement;
 
-/**
- *
- * @author Administrator
- */
+
 public class SQL {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+    
         // TODO code application logic here
         
         try {
@@ -56,13 +51,12 @@ ResultSet rs = stmt.executeQuery(sql);
 
 while (rs.next()) {
 
-     System.out.println("Hello");   
+      
      
     System.out.println(rs.getString("FirstName") + " " + rs.getString("LastName"));
     
             }
-            
-            
+                       
             
 
     }
