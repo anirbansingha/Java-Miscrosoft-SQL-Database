@@ -67,3 +67,7 @@ while (rs.next()) {
         }
     }
 }
+
+# Authentication-Error
+
+# Port used by SQL server
