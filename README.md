@@ -1,4 +1,4 @@
-# Java-Miscrosoft-SQL-Database.
+# Java-Microsoft-SQL-Database.
 
 Beginner: This article shows how to connect Microsoft SQL database using Java.
 
