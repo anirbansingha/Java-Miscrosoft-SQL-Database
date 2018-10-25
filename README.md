@@ -71,5 +71,9 @@ while (rs.next()) {
 # Authentication-Error.
  Copy the auth dll from the Microsoft JDBC Driver in your project folder.
 # Port used by SQL server.
-In SQL Server Configuration Manager and check TCP port
+In SQL Server Configuration Manager and check TCP port.
+# Common-Error.
+java.lang.ClassNotFoundException: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+
 
